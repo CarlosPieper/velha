@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "52nze5JDtJI3a8UwpRaSPgtSdrNe4iUu8jGJc7Jy0SY3Y3TvJA+RrDYXaJOJAMga7IDwAqVcC7wCfuqBWVi2eg==",
+  "success": true,
+  "projectFilePath": "/home/carlos/projects/college/complexidade/velha/velha.csproj",
+  "expectedPackageFiles": [
+    "/home/carlos/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.8/microsoft.aspnetcore.app.ref.6.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
