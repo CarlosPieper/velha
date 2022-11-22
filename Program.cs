@@ -25,6 +25,7 @@ for (var l = 0; l < 3; l++)
                     VerificaVencedor(posicoes);
                     break;
                 }
+                if (acabou) return;
             }
         }
     }
@@ -43,7 +44,8 @@ void MostrarJogo(Peca[,] posicoes)
                 matriz += "|";
             }
         }
-        matriz += "\n----|----|----\n";
+        if (i < 2)
+            matriz += "\n----|----|----\n";
     }
     Console.WriteLine(matriz);
 }
@@ -52,42 +54,42 @@ void VerificaVencedor(Peca[,] posicoes)
 {
     if (posicoes[0, 0].Jogador != 0 && (posicoes[0, 0].Jogador == posicoes[0, 1].Jogador && posicoes[0, 1].Jogador == posicoes[0, 2].Jogador))
     {
-        Console.WriteLine($"Fim do jogo, {(posicoes[0, 0].Jogador == 1 ? "X" : "O")}' venceu");
+        Console.WriteLine($"Fim do jogo, '{(posicoes[0, 0].Jogador == 1 ? "X" : "O")}' venceu");
         acabou = true;
     }
     else if (posicoes[1, 0].Jogador != 0 && (posicoes[1, 0].Jogador == posicoes[1, 1].Jogador && posicoes[1, 1].Jogador == posicoes[1, 2].Jogador))
     {
-        Console.WriteLine($"Fim do jogo, {(posicoes[1, 0].Jogador == 1 ? "X" : "O")}' venceu");
+        Console.WriteLine($"Fim do jogo, '{(posicoes[1, 0].Jogador == 1 ? "X" : "O")}' venceu");
         acabou = true;
     }
     else if (posicoes[2, 0].Jogador != 0 && (posicoes[2, 0].Jogador == posicoes[2, 1].Jogador && posicoes[2, 1].Jogador == posicoes[2, 2].Jogador))
     {
-        Console.WriteLine($"Fim do jogo, {(posicoes[2, 0].Jogador == 1 ? "X" : "O")}' venceu");
+        Console.WriteLine($"Fim do jogo, '{(posicoes[2, 0].Jogador == 1 ? "X" : "O")}' venceu");
         acabou = true;
     }
     else if (posicoes[0, 0].Jogador != 0 && (posicoes[0, 0].Jogador == posicoes[1, 0].Jogador && posicoes[1, 0].Jogador == posicoes[2, 0].Jogador))
     {
-        Console.WriteLine($"Fim do jogo, {(posicoes[0, 0].Jogador == 1 ? "X" : "O")}' venceu");
+        Console.WriteLine($"Fim do jogo, '{(posicoes[0, 0].Jogador == 1 ? "X" : "O")}' venceu");
         acabou = true;
     }
     else if (posicoes[0, 1].Jogador != 0 && (posicoes[0, 1].Jogador == posicoes[1, 1].Jogador && posicoes[1, 1].Jogador == posicoes[2, 1].Jogador))
     {
-        Console.WriteLine($"Fim do jogo, {(posicoes[0, 1].Jogador == 1 ? "X" : "O")}' venceu");
+        Console.WriteLine($"Fim do jogo, '{(posicoes[0, 1].Jogador == 1 ? "X" : "O")}' venceu");
         acabou = true;
     }
     else if (posicoes[0, 2].Jogador != 0 && (posicoes[0, 2].Jogador == posicoes[1, 2].Jogador && posicoes[1, 2].Jogador == posicoes[2, 2].Jogador))
     {
-        Console.WriteLine($"Fim do jogo, {(posicoes[0, 2].Jogador == 1 ? "X" : "O")}' venceu");
+        Console.WriteLine($"Fim do jogo, '{(posicoes[0, 2].Jogador == 1 ? "X" : "O")}' venceu");
         acabou = true;
     }
     else if (posicoes[0, 0].Jogador != 0 && (posicoes[0, 0].Jogador == posicoes[1, 1].Jogador && posicoes[1, 1].Jogador == posicoes[2, 2].Jogador))
     {
-        Console.WriteLine($"Fim do jogo, {(posicoes[0, 0].Jogador == 1 ? "X" : "O")}' venceu");
+        Console.WriteLine($"Fim do jogo, '{(posicoes[0, 0].Jogador == 1 ? "X" : "O")}' venceu");
         acabou = true;
     }
     else if (posicoes[2, 0].Jogador != 0 && (posicoes[2, 0].Jogador == posicoes[1, 1].Jogador && posicoes[1, 1].Jogador == posicoes[0, 2].Jogador))
     {
-        Console.WriteLine($"Fim do jogo, {(posicoes[2, 0].Jogador == 1 ? "X" : "O")}' venceu");
+        Console.WriteLine($"Fim do jogo, '{(posicoes[2, 0].Jogador == 1 ? "X" : "O")}' venceu");
         acabou = true;
     }
 }
