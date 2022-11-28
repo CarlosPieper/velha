@@ -43,6 +43,8 @@ void Jogar()
                         VerificaVencedor(posicoes);
                         SetarPecaIndisponivel(j, p);
                         validas++;
+                        Jogar();
+                        //return;
                         //Thread.Sleep(200);
                     }
                     tentativas++;

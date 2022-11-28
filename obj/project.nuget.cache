@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "52nze5JDtJI3a8UwpRaSPgtSdrNe4iUu8jGJc7Jy0SY3Y3TvJA+RrDYXaJOJAMga7IDwAqVcC7wCfuqBWVi2eg==",
+  "dgSpecHash": "HIxXnWPy5k1QmKsBJcmb85hRXeAlwWwDPEj7CjuBlL2E8bl0B5l1Tnts0rD333+MDNumHB0hztsjjaj8J4TfBA==",
   "success": true,
-  "projectFilePath": "/home/carlos/projects/college/complexidade/velha/velha.csproj",
-  "expectedPackageFiles": [
-    "/home/carlos/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.8/microsoft.aspnetcore.app.ref.6.0.8.nupkg.sha512"
-  ],
+  "projectFilePath": "/home/carlos/projects/velha/velha.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
