@@ -14,7 +14,14 @@ bool acabou = false;
 int validas = 0;
 int tentativas = 0;
 DateTime inicio = DateTime.Now;
+
 Jogar();
+
+DateTime fim = DateTime.Now;
+var tempo = (fim - inicio).TotalSeconds;
+Console.WriteLine("tempo: " + tempo);
+Console.WriteLine("tentativas: " + tentativas);
+Console.WriteLine("válidas: " + validas);
 
 void Jogar()
 {
@@ -36,6 +43,7 @@ void Jogar()
                         VerificaVencedor(posicoes);
                         SetarPecaIndisponivel(j, p);
                         validas++;
+                        //Thread.Sleep(200);
                     }
                     tentativas++;
                 }
@@ -43,12 +51,6 @@ void Jogar()
         }
     }
 }
-
-DateTime fim = DateTime.Now;
-var tempo = (fim - inicio).TotalMilliseconds;
-Console.WriteLine("tempo: " + tempo);
-Console.WriteLine("tentativas: " + tentativas);
-Console.WriteLine("válidas: " + validas);
 
 void MostrarJogo(Peca[,] posicoes)
 {
