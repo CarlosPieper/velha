@@ -44,7 +44,6 @@ void Jogar()
                         SetarPecaIndisponivel(j, p);
                         validas++;
                         Jogar();
-                        //Thread.Sleep(200);
                     }
                     tentativas++;
                 }
